@@ -29,15 +29,15 @@ body {
 button {
     padding: 10px 20px;
     margin: 10px;
-    background-color: #238636;
+    background-color: #20B2AA;
     color: #c9d1d9;
-    border: 2px solid #2ea043;
+    border: 2px solid #1E908D;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
 }
 button:hover {
-    background-color: #2ea043;
+    background-color: #1E908D;
 }
 table {
     width: 80%;
