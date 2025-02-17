@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Education Qualifications</title>
+        <link rel="stylesheet" href="s.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>BHARATH M</h1>
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+        <div class="buttons-container">
+            <a href="resume1.html"><button>Education Qualifications</button></a>
+            <a href="resume2.html"><button>Projects Done</button></a>
+            <a href="resume3.html"><button>Area Of Interests</button></a>
+            <a href="resume4.html"><button>Skill Sets</button></a>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Class</th>
+                    <th>School</th>
+                    <th>Marks Obtained</th>
+                    <th>Certificate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Xth</td>
+                    <td>Vivekananda Matric and Hr secondary school</td>
+                    <td>PASS</td>
+                    <td><button onclick="showPopup('10th.jpg')">View Certificate</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>12th</td>
+                    <td>Vivekananda Matric and Hr secondary school</td>
+                    <td>83%</td>
+                    <td><button onclick="showPopup('12th.jpg')">View Certificate</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="overlay" id="overlay" onclick="closePopup()"></div>
+        <div class="popup" id="popup">
+            <img id="popup-image" src="" alt="Certificate">
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+        <script>
+            function showPopup(imageSrc) {
+                document.getElementById('popup-image').src = imageSrc;
+                document.getElementById('popup').style.display = 'block';
+                document.getElementById('overlay').style.display = 'block';
+            }
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+                document.getElementById('overlay').style.display = 'none';
+            }
+        </script>
+    </body>
+</html>
